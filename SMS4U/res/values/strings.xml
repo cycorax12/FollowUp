@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="starting_activity">Messages</string>
+    <string name="app_name">FollowUp</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_submit">Submit</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="title_activity_test">Test</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_smsadd">Add Message</string>
+    <string name="title_contact_activity">Contacts</string>
+    <string name="hint_title">Enter Title</string>
+    <string name="date">Date</string>
+    <string name="contacts_hint"></string>
+    <string name="title_activity_smsupdate">Update Message</string>
+    <string name="title_activity_smsview_message">Message Details</string>
+    <string name="add_contact_hint">Comma separated Contact Numbers</string>
+    <string name="message_hint">Type message here</string>
+    <string name="action_update">Update</string>
+
+</resources>

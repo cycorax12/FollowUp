@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp" >
+
+        <LinearLayout
+            android:id="@+id/view_first_add_part"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numbers To SEnd" />
+
+            <EditText
+                android:id="@+id/view_sms_numbers"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_margin="3sp"
+                android:layout_weight="1"
+                android:background="@drawable/edit_text_style"
+                android:hint="Comma separated Contact Numbers."
+                android:inputType="phone"
+                android:paddingLeft="5sp"
+                android:textColor="#000000" >
+            </EditText>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/view_sms_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50sp"
+            android:layout_below="@+id/view_first_add_part"
+            android:layout_margin="3sp"
+            android:background="@drawable/edit_text_style"
+            android:hint="@string/hint_title"
+            android:inputType="text"
+            android:paddingLeft="5sp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:id="@+id/view_date_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_sms_title"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/view_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/view_dateText"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_style"
+                    android:inputType="date"
+                    android:paddingLeft="5sp"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/view_dateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:text="@string/date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".50"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/view_timeText"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_style"
+                    android:inputType="time"
+                    android:paddingLeft="5sp"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/view_timeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:text="time" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/view_date_time"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/view_sms_message"
+                android:layout_width="fill_parent"
+                android:layout_height="120sp"
+                android:layout_margin="3sp"
+                android:layout_weight=".76"
+                android:background="@drawable/edit_text_style"
+                android:gravity="left|top"
+                android:hint="Type message here."
+                android:imeOptions="actionSend|flagNoEnterAction"
+                android:inputType="textMultiLine"
+                android:paddingLeft="5sp"
+                android:scrollbars="vertical"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".24"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/view_submit_sms_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight=".50"
+                    android:text="@string/action_submit" />
+
+                <Button
+                    android:id="@+id/view_cancel_sms_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight=".50"
+                    android:text="@string/action_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>
